@@ -1,0 +1,13 @@
+p {
+  padding: 10px;
+}
+
+.logMessage {
+  border-style: solid;
+  border-width: 1px;
+  border-color: gray;
+}
+
+.info {
+  background-color: blue;
+}

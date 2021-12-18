@@ -1,0 +1,16 @@
+<button
+  class="btn btn-primary"
+  (click)="onDisplayDetailsClick($event);"
+>
+  Display Details
+</button>
+<p *ngIf="isDisplayDetails">Secret Password = 'tuna'</p>
+
+<p
+  class="logMessage"
+  *ngFor="let logMessage of log; index as i"
+  [ngClass]="{'info': i >= 5}"
+  [ngStyle]="{color: i >= 5 ? 'white' : 'black' }"
+>
+  {{ i+1 }} date: {{logMessage.date}}, message: {{logMessage.message}}
+</p>
